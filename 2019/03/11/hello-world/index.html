@@ -6,6 +6,8 @@
   <title>Hello World | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+    <meta name="keywords" content="MinHow,MinHow's Blog">
+  
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
@@ -39,18 +41,18 @@
         <div id="header-menu" class="header-menu-pos animated">
             <div class="header-menu-container">
                 <a href="/" class="left">
-                    <span class="site-title">飞云科技</span>
+                    <span class="site-title">MinHow&#39;s Blog</span>
                 </a>
                 <nav id="header-menu-nav" class="right">
                     
                     <a href="/">
                         <i class="fa fa-home"></i>
-                        <span>主页</span>
+                        <span>Home</span>
                     </a>
                     
                     <a href="/archives">
                         <i class="fa fa-archive"></i>
-                        <span>时间轴</span>
+                        <span>Archives</span>
                     </a>
                     
                     <a href="/about">
@@ -74,7 +76,7 @@
                 <div id="header-title">
                     
                     <h2>
-                        飞云科技
+                        MinHow&#39;s Blog
                     </h2>
                     
                 </div>
@@ -241,7 +243,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/03/11/hello-world/" alt="微信分享二维码">
+    <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/11/hello-world/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -267,8 +269,6 @@
 
 
 
-
-
     
 
     
@@ -284,15 +284,6 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-<p>
-    <span id="busuanzi_container_site_uv" style="display:none">
-        总访客数：<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span id="busuanzi_container_site_pv" style="display:none">
-        总访问量：<span id="busuanzi_value_site_pv"></span>
-    </span>
-</p>
-
 
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
@@ -302,10 +293,8 @@
     </div>
   </div>
 </footer>
-    
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
 <script>
   var mihoConfig = {
       root: "http://yoursite.com",
@@ -347,13 +336,13 @@
             
             <li>
                 <a href="/">
-                    <i class="fa fa-home"></i><span>主页</span>
+                    <i class="fa fa-home"></i><span>Home</span>
                 </a>
             </li>
             
             <li>
                 <a href="/archives">
-                    <i class="fa fa-archive"></i><span>时间轴</span>
+                    <i class="fa fa-archive"></i><span>Archives</span>
                 </a>
             </li>
             
@@ -406,6 +395,32 @@
 
 
 
+   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+   <script>
+       var GUEST_INFO = ['nick','mail','link'];
+       var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+           return GUEST_INFO.indexOf(item) > -1
+       });
+       var notify = 'false' == true;
+       var verify = 'false' == true;
+       var valine = new Valine();
+       valine.init({
+           el: '#valine_container',
+           notify: notify,
+           verify: verify,
+           appId: "B61V12JS8A2TLgHB91pkadao-gzGzoHsz",
+           appKey: "0g4pO989KlypNpyuPXdew2GG",
+           placeholder: "回复",
+           pageSize:'10',
+           avatar:'mm',
+           lang:'zh-cn'
+       })
+   </script>
+ 
+
+
+
 
   <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
   <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
@@ -417,8 +432,6 @@
      $(".article-entry p img").popImg();
   </script>
 
-    {% elsif site.valine_comment.enable %}
-    <div id="vcomments"></div>
   </div>
 </body>
 </html>
