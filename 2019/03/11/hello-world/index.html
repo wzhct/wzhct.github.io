@@ -29,6 +29,16 @@
   
 
   
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?8864dbf1b44502cec9e4c096c3e41b44";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
   
 
 </head>
@@ -284,6 +294,15 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
 
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
@@ -402,7 +421,7 @@
        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
            return GUEST_INFO.indexOf(item) > -1
        });
-       var notify = 'false' == true;
+       var notify = 'true' == true;
        var verify = 'false' == true;
        var valine = new Valine();
        valine.init({
@@ -413,7 +432,7 @@
            appKey: "0g4pO989KlypNpyuPXdew2GG",
            placeholder: "回复",
            pageSize:'10',
-           avatar:'mm',
+           avatar:'wavatar',
            lang:'zh-cn'
        })
    </script>
